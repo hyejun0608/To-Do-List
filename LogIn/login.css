@@ -1,0 +1,111 @@
+.toDoList {
+    font-size: 90px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(116, 116, 116);
+    text-align: center;
+    cursor: default;
+    margin-top: 100px;
+}
+.outline {
+    border: 2px solid rgb(116, 116, 116);
+    border-radius: 60px;
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.ID {
+    border: 2px solid rgb(116, 116, 116);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: rgb(116, 116, 116);
+    width: 100px;
+    height: 47px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: default;
+}
+.id {
+    border: 2px solid rgb(146, 146, 146);
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(211, 211, 211, 0.4);
+    width: 350px;
+    height: 45px;
+    outline: none;
+}
+.pw {
+    border: 2px solid rgb(146, 146, 146);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+    background-color: rgba(211, 211, 211, 0.4);
+    width: 350px;
+    height: 45px;
+    outline: none;
+}
+.PW {
+    border: 2px solid rgb(116, 116, 116);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: rgb(116, 116, 116);
+    width: 100px;
+    height: 47px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: default;
+}
+.loginid {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.loginpw {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.login {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(146, 146, 146);
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(116, 116, 116);
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.signup {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(146, 146, 146);
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(116, 116, 116);
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+.no {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(92, 92, 92);
+    margin-top: 35px;
+    cursor: default;
+}
+a {
+    text-decoration: none;
+}
