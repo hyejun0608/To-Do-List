@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="signup.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a href="todolist.html">
+            <div class="toDoList">To do list</div>
+        </a>
+        <div class="outline">
+            <div class="text">Sign up</div>
+            <form>
+                <div class="name">
+                    <div class="nametext">NAME</div>
+                    <input type="text" class="nameinput">
+                </div>
+                <div class="madeid">
+                    <div class="ID">ID</div>
+                    <input type="text" class="id">
+                </div>
+                <div class="madepw">
+                    <div class="PW">PW</div>
+                    <input type="password" class="pw">
+                </div>
+                <input type="button" value="가입완료" id="signup" onclick="onButtonClicked()">
+            </form>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="signup.js"></script>
+    </body>
+</html>
