@@ -24,16 +24,15 @@ function valuetest() {
 
 function onButtonClicked() {
     valuetest();
-    axios.post('http://52.78.41.100:8000/user/register', {
-        data: {
-            'name': 'name.value',
-            'userId': 'id.value',
-            'password': 'pw.value'
-        }
+    axios.post('http://13.125.221.189:8000/user/register', {
+        'name': name.value,
+        'userId': id.value,
+        'password': pw.value
     })
-    .then (
-        alert("회원가입에 성공하셨습니다!")
-    )
+    .then (res => {
+        alert("회원가입에 성공하셨습니다!");
+        console.log(res);
+    })
     .catch(error => {
         console.log(error);
     })
