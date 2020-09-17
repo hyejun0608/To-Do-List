@@ -17,14 +17,14 @@ function loginCheck() {
 }
 function onClicked() {
     loginCheck();
-    axios.post('http://52.78.41.100:8000/user/login', {
-        data: {
-            "userId": "id.value",
-            "password": "pw.value"
-        }
+    axios.post('http://13.125.221.189:8000/user/login', {
+        "userId": id.value,
+        "password": pw.value
     })
-    .then (
+    .then ( res => {
         alert("로그인 성공했습니다!")
+        console.log(res)
+    }
     )
     .catch(error => {
         console.log(error);
