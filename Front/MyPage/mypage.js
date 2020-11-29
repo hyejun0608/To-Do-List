@@ -62,3 +62,11 @@ function newElement() {
     li.appendChild(checkbtn);
     checkbtn.addEventListener("click", checked);
 }
+
+function init() {
+    const checkbtn = document.querySelector(".checkbtn");
+    checkbtn.addEventListener("click", checked);
+    const removeBtn = document.querySelector('.deletebtn');
+    removeBtn.addEventListener('click', removedclick)
+}
+init();
