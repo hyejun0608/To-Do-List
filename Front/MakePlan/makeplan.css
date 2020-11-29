@@ -38,6 +38,7 @@ div > span {
     height: 300px;
     outline: none;
     font-size: 33px;
+    resize: none;
 }
 .count {
     font-size: 40px;
@@ -72,4 +73,5 @@ a {
     float: right;
     margin-top: 100px;
     margin-right: 20px;
+    cursor: pointer;
 }
