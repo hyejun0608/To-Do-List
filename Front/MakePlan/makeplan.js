@@ -1,25 +1,12 @@
-const number = document.querySelector(".count");
-const increase = document.querySelector(".plus");
-const decrease = document.querySelector('.minus');
-const content = doucment.querySelector('.contents');
-
-increase.onclick = () => {
-  const current = parseInt(number.innerText, 10);
-  number.innerText = current + 1;
-};
-
-decrease.onclick = () => {
-  const current = parseInt(number.innerText, 10);
-  number.innerText = current - 1;
-};
+const content = document.querySelector('.plan');
 
 function onButtonClicked() {
   axios.post('http://52.78.41.100:8000/todo', {
-      header: {
-        "access-token": "access-token"
+      body: {
+          "content": content.value
       },
-      data: {
-          "content": content
+      header: {
+        "access-token": localStorage.getItem("access-token")
       }
   })
   .then (

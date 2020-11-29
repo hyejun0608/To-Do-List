@@ -1,6 +1,6 @@
 axios.get('http://52.78.41.100:8000/todo', {
     header: {
-      "access-token": "access-token"
+      "access-token": localStorage.getItem('access-token')
     }
 })
 .then (
@@ -21,12 +21,12 @@ function checked(event) {
 }
 
 function removedclick() {
-    axios.delete('http://52.78.41.100:8000/todo'. {
+    axios.delete('http://52.78.41.100:8000/todo', {
         path : {
             "id": id
         },
         header : {
-            "access-token": "access-token"
+            "access-token": localStorage.getItem('access-token')
         }
     })
     .then (
@@ -48,6 +48,7 @@ function newElement() {
     const li = document.createElement("li");
     //newspan
     const newspan = document.createElement("span");
+    newspan.value = data;
     li.appendChild(newspan);
     // removebtn
     const removebtn = document.createElement("button");
